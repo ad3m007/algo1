@@ -13,6 +13,7 @@ BEGIN
 Write(s);
 
 ch2:= ch+" ";
+k:=0
   FOR j FROM 0 TO ch2.length-1 DO
     if(ch2[j]=" ") THEN
     k=k+1;
@@ -27,6 +28,7 @@ p:=0;
     END_IF
     l:= l+1;
   UNTIL (l=ch.length-1)
+  Write(p)
 
 
   
