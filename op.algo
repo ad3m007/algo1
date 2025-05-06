@@ -1,0 +1,33 @@
+ALGORITHM test
+VAR
+  i,s,k,l:INTEGER;ch,ch2:STRING;
+BEGIN
+  Write("donner jomla");
+  read(ch);
+ i:=0;
+ s:=1;
+    WHILE (ch[i]<>".") DO
+     s:=s+1;
+     i:= i + 1;
+   END_WHILE
+Write(s);
+
+ch2:= ch+" ";
+  FOR j FROM 0 TO ch2.length-1 DO
+    if(ch2[j]=" ") THEN
+    k=k+1;
+  END_FOR
+  Write(k);
+
+l:=0;
+p:=0;
+  REPEAT
+    IF (pos(ch[l],"auioy")<>-1) THEN
+      p=p+1;
+    END_IF
+    l:= l+1;
+  UNTIL (l=ch.length-1)
+
+
+  
+END
